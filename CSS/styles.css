@@ -30,9 +30,10 @@ body {
 	font-family: 'Fira Sans', sans-serif;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 /* ------ Header ------ */
 .menu__bar{

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;1,100;1,400;1,600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+/* ------ Général ------ */
+
+
+
+
+/* ------ Typographie ------ */
+
+
+
+
+.space_statistic{
+    width: 100%;
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.space_circle{
+    margin: 0 auto;
+}
+.circle{
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--vertClair);
+    background: conic-gradient( 
+        var(--vertClair) 0 35%,
+       rgb(243, 164, 7) 35% 100%
+    );
+    display: grid;
+    justify-items: center;;
+}
+.statistic_txt{
+    display: inline-block;
+    align-items: center;
+    padding: 5px;    
+}
+.statistic_txt h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+
+    
+}
+.statistic_txt p{
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 12px;
+    
+}
+.statistic .statistic_percent {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.statistic_percent h4{
+    border-bottom: 1px solid var(--vertClair);
+    font-size: 30px;
+    padding: 10px 5px;
+}
+.statistic_percent h3{
+    text-align: center;
+  
+    border-radius: 50%;
+    font-size: 40px;
+}
+.statistic_percent h3 span{
+    font-size: 20px;
+    color: var(--vertClair);
+}
+.statistic_btn button{
+    width: 50%;
+    background-color:var(--vertClair);
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.statistic_btn button:hover{ 
+    background-color: rgb(248, 248, 250);
+    color: var(--vertClair);
+    border: 1px solid blue;
+    
+}
+@media screen and (max-width: 1200px) {
+    .space_statistic {
+      width: 100%;
+    }
+    
+   }
+  
+  @media screen and (max-width: 992px) {
+
+    .space_statistic{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .statistic h3{
+        display: flex;
+        font-size: 25px;
+        margin-bottom: 5px;
+        color: red;
+  }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+    .space_statistic {
+     display: block;
+     align-items: center;
+    }
+   .circle  {
+    position: relative;
+    margin: 0 auto;
+   }
+    }
+
+    .statistic_percent{
+        display: block;
+        padding: 20px;
+    }
+    .statistic_percent h4, p{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+  
+  @media screen and (max-width: 576px) {
+
+    .statistic .statistic_percent {
+        display: block;
+        place-items: center;
+    }.statistic_btn button{
+        width: 100%;
+        
+    }
+
+    }
