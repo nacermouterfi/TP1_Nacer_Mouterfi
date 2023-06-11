@@ -1,19 +1,17 @@
-
-.cards{
+.cards {
     margin: 0 auto;
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
-    grid-template-rows: 1fr;
     gap: 10px;
-
 }
-.card{
+
+.card {
     margin-top: 25px;
     margin-bottom: 25px;
-    box-shadow: 0 0 3px ;
-    padding: 20px;    
+    box-shadow: 0 0 3px;
+    padding: 20px;
 }
+
 .testimonial__title {
     text-align: center;
     font-size: 1em;
@@ -21,28 +19,51 @@
     color: var(--vertClair);
 }
 
-.card__image{
+.card__image {
     width: 100%;
     display: block;
 }
-.card__text{
+
+.card__text {
     line-height: 1.5em;
-    font-size: .7em;
-    padding: .3em;
+    font-size: 0.7em;
+    padding: 0.3em;
 }
-.card__text p{
+
+.card__text p {
     line-height: 1.5em;
-    font-size: .9em;
-    padding: .3em;
+    font-size: 0.9em;
+    padding: 0.3em;
 }
-.card__text h3{
+
+.card__text h3 {
     color: var(--vertClair);
 }
-.card__text h5{
-    font-style: italic;   
+
+.card__text h5 {
+    font-style: italic;
 }
-.card__social i{
+
+.card__social i {
     padding: 10px;
     font-size: 12px;
-    display: inline-block;  
+    display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }

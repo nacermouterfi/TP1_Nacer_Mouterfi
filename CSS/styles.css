@@ -69,6 +69,16 @@ body {
 .menu__bar ul li a:hover{
   color: var(--vertClair);
 }
+@media screen and (min-width: 768px) {
+  .menu__bar ul{
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .menu__bar ul li{
+    padding: 10px 30px;
+  }
+}
 
 /* ------ Slider ------ */
 
