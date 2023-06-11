@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="JS/slider.js" defer></script>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/cards.css">
     <link rel="stylesheet" href="CSS/statistic.css">
     <link rel="stylesheet" href="CSS/slide.css">
     <link rel="stylesheet" href="CSS/testimonial.css">
+    <link rel="stylesheet" href="CSS/slider.css">
     <title>PARC DE LA FEE</title>
 </head>
 <body>
@@ -28,12 +30,21 @@
             <hr>
     </section>
      <!-- ˚˚˚˚ PARTIE SLIDER -->
-     <section class="container">
-         <div class="container__slider">
-            <img src="imgs/jardin.jpg" alt="image d'un parc">
-         </div>
-         <hr>
-    </section>
+     <div class="container">
+
+        <div class="slider">
+            <img src="imgs/anna-kids.jpg" alt="image enfants" class="slider__image active" />
+            <img src="imgs/robertkids.jpg" alt="image enfants" class="slider__image" />
+            <img src="imgs/sam-kids.jpg" alt="image enfants" class="slider__image" />
+            
+            <div class="button__next">
+                <i class="fas fa-chevron-circle-right"></i>
+            </div>
+            <div class="button__previous">
+                <i class="fas fa-chevron-circle-left"></i>
+            </div>
+        </div>
+    </div>
     <!-- ˚˚˚˚ PARTIE TEXT INPUT -->
     <section class="container">
          <div class="textInput">
