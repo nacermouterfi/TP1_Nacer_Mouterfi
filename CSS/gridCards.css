@@ -1,22 +1,20 @@
 .container_grid{
+    min-height: 100vh;
     width: 1200px;
     display: grid;
     grid-template-columns: repeat(37, .5fr);
     grid-template-rows: repeat(13, .5fr);
-    gap: 10px;
+    gap: 5px;
     margin: 0 auto;
 }
 .container_grid .card{    
     position: relative;
-
     display: flex;
 }
 .container_grid .card img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    
-    
-
 }
 .container_grid .card:hover{
     background-color: greenyellow;
@@ -54,15 +52,9 @@
         flex-direction: column;
     }
   
-    .container_grid .card img{
-        height: auto;
-    }
 
-    .container_grid .card:nth-child(1){
-        grid-column: 1/38;
-        grid-row: auto;
-    }
-  
+
+    .container_grid .card:nth-child(1)
     .container_grid .card:nth-child(2),
     .container_grid .card:nth-child(3),
     .container_grid .card:nth-child(4),
@@ -76,36 +68,20 @@
 /* Tablettes */
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .container_grid .card:nth-child(1){
-        grid-column: 1/26;
+        grid-column: 1/15;
         grid-row: auto;
     }
 
-    .container_grid .card:nth-child(2){
-        grid-column: 26/38;
-        grid-row: 1/8;
-    }
-  
-    .container_grid .card:nth-child(3){
-        grid-column: 26/32;
-        grid-row: 8/14;
-    }
-  
-    .container_grid .card:nth-child(4),
-    .container_grid .card:nth-child(5){
-        grid-column: auto;
-        grid-row: auto;
-    }
-  
     .container_grid .card:nth-child(6){
-        grid-column: 32/38;
-        grid-row: 11/14;
+        grid-column: 16/38;
+        grid-row: auto;
     }
 }
 
-/* Ordinateurs portables */
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .container_grid .card:nth-child(1){
-        grid-column: 1/15;
+        grid-column: 1/16;
         grid-row: 3/9;
     }
 
@@ -129,4 +105,4 @@
         grid-row: auto;
     }
   
- }
+ } 

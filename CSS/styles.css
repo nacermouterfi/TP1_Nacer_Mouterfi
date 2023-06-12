@@ -36,6 +36,12 @@ body {
 	margin: 0 auto;
 }
 /* ------ Header ------ */
+header{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  height: 250px;
+  color:green;
+}
 .menu__bar{
   background-color: var(--white);
   height: 80px;
@@ -46,6 +52,7 @@ body {
   justify-content: space-between;
 }
 .logo{
+  width: 300px;
   color: var(--vertClair);
   font-size: 30px;
 }
@@ -70,8 +77,8 @@ body {
   color: var(--vertClair);
 }
 @media screen and (min-width: 768px) {
-  .menu__bar ul{
-    flex-direction: row;
+  .header{
+    flex-direction: column;
     align-items: center;
   }
   
@@ -159,3 +166,6 @@ input[type=text]:focus{
   align-items: space-between;
 }
 
+@media screen and (max-width : 899px){
+
+}
